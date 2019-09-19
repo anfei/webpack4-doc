@@ -1,0 +1,47 @@
+{
+  "name": "webpack-demo",
+  "sideEffects":[
+    "*.css"
+  ],
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --config webpack.dev.js --mode development  --open",
+    "build": "webpack --config webpack.prod.js --mode production"
+  },
+  "keywords": [],
+  "author": "anfei",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "babel-loader": "^8.0.6",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "csv-loader": "^3.0.2",
+    "express": "^4.17.1",
+    "file-loader": "^4.2.0",
+    "html-webpack-plugin": "^3.2.0",
+    "http-server": "^0.11.1",
+    "mini-css-extract-plugin": "^0.8.0",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "style-loader": "^1.0.0",
+    "ts-loader": "^6.1.0",
+    "typescript": "^3.6.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-middleware": "^3.7.1",
+    "webpack-dev-server": "^3.8.0",
+    "webpack-merge": "^4.2.2",
+    "workbox-webpack-plugin": "^4.3.1",
+    "xml-loader": "^1.2.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "whatwg-fetch": "^3.0.0"
+  }
+}
